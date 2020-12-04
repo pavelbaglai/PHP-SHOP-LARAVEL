@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap tooltip.js v5.0.0-alpha3 (https://getbootstrap.com/)
+  * Bootstrap tooltip.js v5.0.0-beta1 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -19,7 +19,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-alpha3): util/index.js
+   * Bootstrap (v5.0.0-beta1): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -160,7 +160,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-alpha3): util/sanitizer.js
+   * Bootstrap (v5.0.0-beta1): util/sanitizer.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -294,7 +294,7 @@
    * ------------------------------------------------------------------------
    */
 
-  var VERSION = '5.0.0-alpha3';
+  var VERSION = '5.0.0-beta1';
 
   var BaseComponent = /*#__PURE__*/function () {
     function BaseComponent(element) {
