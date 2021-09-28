@@ -1,11 +1,10 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## This is a Laravel + Vue.js e-commerce template that will make it easy for you to start your own online store.
+
+## This is a Laravel  e-commerce 
 
 
 There is the [DEMO](http://uls.northeurope.cloudapp.azure.com/) ULE-shop.
 
-[Video presentation](https://youtu.be/McmVr2FEo-0)
 
 <p><img src="https://preview.ibb.co/dyyGMb/sshot_shop.png" alt="sshot_shop" border="0"></p>
 
@@ -24,14 +23,3 @@ There is the [DEMO](http://uls.northeurope.cloudapp.azure.com/) ULE-shop.
 13. For testing Vue.js run the command "npm run test"
 14. To check code quality run: ./vendor/bin/phpstan analyse --memory-limit=2G. Setup code quality Level 0-8 in the file phpstan.neon.
 
-### Docker-compose for local development:
-- setup docker and docker-compose on your local machine.
-- create the .local_data folder in the folder with your project
-- install mkcert and generate ssl certificates:
-```  
-brew install mkcert nss
-mkcert -cert-file .docker/nginx/dev/site.crt -key-file .docker/nginx/dev/site.key localhost 127.0.0.1
-```
-- run docker-compose up -d
-
-_Uladzimir Sadkou_: hofirma@gmail.com 
