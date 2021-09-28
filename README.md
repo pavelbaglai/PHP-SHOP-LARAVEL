@@ -1,239 +1,401 @@
-<p align="center">
-  <a href="https://v5.getbootstrap.com/">
-    <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
-  </a>
-</p>
-
-<h3 align="center">Bootstrap</h3>
-
-<p align="center">
-  Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-  <br>
-  <a href="https://v5.getbootstrap.com/docs/5.0/"><strong>Explore Bootstrap docs »</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/twbs/bootstrap/issues/new?template=bug_report.md">Report bug</a>
-  ·
-  <a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Request feature</a>
-  ·
-  <a href="https://themes.getbootstrap.com/">Themes</a>
-  ·
-  <a href="https://blog.getbootstrap.com/">Blog</a>
-</p>
-
-
-## Bootstrap 4
-
-Our default branch is for development of our upcoming Bootstrap 5 release. Head to the [`v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev) to view the readme, documentation, and source code for Bootstrap 4.
-
-
-## Table of contents
-
-- [Quick start](#quick-start)
-- [Status](#status)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
-
-
-## Quick start
-
-Several quick start options are available:
-
-- [Download the latest release](https://github.com/twbs/bootstrap/archive/v5.0.0-alpha3.zip)
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap@next`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@next`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:5.0.0-alpha3`
-- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
-
-Read the [Getting started page](https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
-
-
-## Status
-
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)
-[![Build Status](https://github.com/twbs/bootstrap/workflows/JS%20Tests/badge.svg?branch=main)](https://github.com/twbs/bootstrap/actions?query=workflow%3AJS+Tests+branch%3Amain)
-[![npm version](https://img.shields.io/npm/v/bootstrap)](https://www.npmjs.com/package/bootstrap)
-[![Gem version](https://img.shields.io/gem/v/bootstrap)](https://rubygems.org/gems/bootstrap)
-[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue)](https://atmospherejs.com/twbs/bootstrap)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap)](https://packagist.org/packages/twbs/bootstrap)
-[![NuGet](https://img.shields.io/nuget/vpre/bootstrap)](https://www.nuget.org/packages/bootstrap/absoluteLatest)
-[![peerDependencies Status](https://img.shields.io/david/peer/twbs/bootstrap)](https://david-dm.org/twbs/bootstrap?type=peer)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap)](https://david-dm.org/twbs/bootstrap?type=dev)
-[![Coverage Status](https://img.shields.io/coveralls/github/twbs/bootstrap/main)](https://coveralls.io/github/twbs/bootstrap?branch=main)
-[![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
-[![CSS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
-[![JS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
-[![JS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)](https://www.browserstack.com/automate/public-build/SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)
-[![Backers on Open Collective](https://img.shields.io/opencollective/backers/bootstrap)](#backers)
-[![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap)](#sponsors)
-
-
-## What's included
-
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
-```text
-bootstrap/
-├── css/
-│   ├── bootstrap-grid.css
-│   ├── bootstrap-grid.css.map
-│   ├── bootstrap-grid.min.css
-│   ├── bootstrap-grid.min.css.map
-│   ├── bootstrap-grid.rtl.css
-│   ├── bootstrap-grid.rtl.css.map
-│   ├── bootstrap-grid.rtl.min.css
-│   ├── bootstrap-grid.rtl.min.css.map
-│   ├── bootstrap-reboot.css
-│   ├── bootstrap-reboot.css.map
-│   ├── bootstrap-reboot.min.css
-│   ├── bootstrap-reboot.min.css.map
-│   ├── bootstrap-reboot.rtl.css
-│   ├── bootstrap-reboot.rtl.css.map
-│   ├── bootstrap-reboot.rtl.min.css
-│   ├── bootstrap-reboot.rtl.min.css.map
-│   ├── bootstrap-utilities.css
-│   ├── bootstrap-utilities.css.map
-│   ├── bootstrap-utilities.min.css
-│   ├── bootstrap-utilities.min.css.map
-│   ├── bootstrap-utilities.rtl.css
-│   ├── bootstrap-utilities.rtl.css.map
-│   ├── bootstrap-utilities.rtl.min.css
-│   ├── bootstrap-utilities.rtl.min.css.map
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap.rtl.css
-│   ├── bootstrap.rtl.css.map
-│   ├── bootstrap.rtl.min.css
-│   └── bootstrap.rtl.min.css.map
-└── js/
-    ├── bootstrap.bundle.js
-    ├── bootstrap.bundle.js.map
-    ├── bootstrap.bundle.min.js
-    ├── bootstrap.bundle.min.js.map
-    ├── bootstrap.esm.js
-    ├── bootstrap.esm.js.map
-    ├── bootstrap.esm.min.js
-    ├── bootstrap.esm.min.js.map
-    ├── bootstrap.js
-    ├── bootstrap.js.map
-    ├── bootstrap.min.js
-    └── bootstrap.min.js.map
-```
-
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/).
-
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
-
-
-## Documentation
-
-Bootstrap's documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://v5.getbootstrap.com/>. The docs may also be run locally.
-
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/assets/js/search.js`.
-
-### Running documentation locally
-
-1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
-2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-3. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
-4. Open `http://localhost:9001/` in your browser, and voilà.
-
-Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
-
-### Documentation for previous releases
-
-You can find all our previous releases docs on <https://v5.getbootstrap.com/docs/versions/>.
-
-[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
-
-
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/main/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
-
-Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
-
-
-## Community
-
-Get updates on Bootstrap's development and chat with the project maintainers and community members.
-
-- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
-- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).
-- Join [the official Slack room](https://bootstrap-slack.herokuapp.com/).
-- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
-- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
-
-
-## Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
-
-See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
-
-
-## Creators
-
-**Mark Otto**
-
-- <https://twitter.com/mdo>
-- <https://github.com/mdo>
-
-**Jacob Thornton**
-
-- <https://twitter.com/fat>
-- <https://github.com/fat>
-
-
-## Thanks
-
-<a href="https://www.browserstack.com/">
-  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="192" height="42">
+<a href="https://aimeos.org/">
+    <img src="https://aimeos.org/fileadmin/template/icons/logo.png" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
 </a>
 
-Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
+# Aimeos Laravel ecommerce package
+[![Total Downloads](https://poser.pugx.org/aimeos/aimeos-laravel/d/total.svg)](https://packagist.org/packages/aimeos/aimeos-laravel)
+[![Build Status](https://circleci.com/gh/aimeos/aimeos-laravel.svg?style=shield)](https://circleci.com/gh/aimeos/aimeos-laravel)
+[![Coverage Status](https://coveralls.io/repos/aimeos/aimeos-laravel/badge.svg?branch=master&service=github)](https://coveralls.io/github/aimeos/aimeos-laravel?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeos/aimeos-laravel/?branch=master)
+[![License](https://poser.pugx.org/aimeos/aimeos/license.svg)](https://packagist.org/packages/aimeos/aimeos)
 
+:star: Star us on GitHub — it helps!
 
-## Sponsors
+[Aimeos](https://aimeos.org/Laravel) is THE professional, full-featured and
+ultra fast e-commerce package for Laravel!  You can install it in your
+existing Laravel application within 5 minutes and can adapt, extend, overwrite
+and customize anything to your needs.
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bootstrap#sponsor)]
+[![Aimeos Laravel demo](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-github.png)](http://laravel.demo.aimeos.org/)
 
-[![OC sponsor 0](https://opencollective.com/bootstrap/sponsor/0/avatar.svg)](https://opencollective.com/bootstrap/sponsor/0/website)
-[![OC sponsor 1](https://opencollective.com/bootstrap/sponsor/1/avatar.svg)](https://opencollective.com/bootstrap/sponsor/1/website)
-[![OC sponsor 2](https://opencollective.com/bootstrap/sponsor/2/avatar.svg)](https://opencollective.com/bootstrap/sponsor/2/website)
-[![OC sponsor 3](https://opencollective.com/bootstrap/sponsor/3/avatar.svg)](https://opencollective.com/bootstrap/sponsor/3/website)
-[![OC sponsor 4](https://opencollective.com/bootstrap/sponsor/4/avatar.svg)](https://opencollective.com/bootstrap/sponsor/4/website)
-[![OC sponsor 5](https://opencollective.com/bootstrap/sponsor/5/avatar.svg)](https://opencollective.com/bootstrap/sponsor/5/website)
-[![OC sponsor 6](https://opencollective.com/bootstrap/sponsor/6/avatar.svg)](https://opencollective.com/bootstrap/sponsor/6/website)
-[![OC sponsor 7](https://opencollective.com/bootstrap/sponsor/7/avatar.svg)](https://opencollective.com/bootstrap/sponsor/7/website)
-[![OC sponsor 8](https://opencollective.com/bootstrap/sponsor/8/avatar.svg)](https://opencollective.com/bootstrap/sponsor/8/website)
-[![OC sponsor 9](https://opencollective.com/bootstrap/sponsor/9/avatar.svg)](https://opencollective.com/bootstrap/sponsor/9/website)
+## Table of content
 
+- [Supported versions](#supported-versions)
+- [Basic application](#basic-application)
+- [Database](#database)
+- [Installation](#installation)
+- [Setup](#setup)
+- [Admin](#admin)
+- [Hints](#hints)
+- [License](#license)
+- [Links](#links)
 
-## Backers
+## Supported versions
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bootstrap#backer)]
+This document is for the Aimeos Laravel package **2020.10 and later**.
 
-[![Backers](https://opencollective.com/bootstrap/backers.svg?width=890)](https://opencollective.com/bootstrap#backers)
+- Stable release: 2021.07 (6.x, 7.x and 8.x)
+- LTS release: 2020.10 (6.x, 7.x and 8.x)
 
+If you want to **upgrade between major versions**, please have a look into the
+[upgrade guide](https://aimeos.org/docs/latest/laravel/setup/#upgrade)!
 
-## Copyright and license
+## Basic application
 
-Code and documentation copyright 2011–2020 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+### Full shop application
+
+If you want to set up a new application or test Aimeos, we recommend the
+[Aimeos shop application](https://github.com/aimeos/aimeos). You need
+*composer 2.1+* to install Aimeos.
+
+It will install a complete shop system including demo data for a quick start
+without the need to follow the steps described in this readme.
+
+```
+wget https://getcomposer.org/download/latest-stable/composer.phar -O composer
+php composer create-project aimeos/aimeos myshop
+```
+
+More about the full package: :star: [Aimeos shop](https://github.com/aimeos/aimeos)
+
+### Shop package only
+
+The Aimeos Laravel online shop package is a composer based library. It can be
+installed easiest by using [Composer 2.1+](https://getcomposer.org) in the root
+directory of your exisisting Laravel application:
+
+```
+wget https://getcomposer.org/download/latest-stable/composer.phar -O composer
+php composer require aimeos/aimeos-laravel:~2021.07
+```
+
+## Database
+
+Make sure that you've **created the database** in advance and added the configuration
+to the `.env` file in your application directory. Sometimes, using the .env file makes
+problems and you will get exceptions that the connection to the database failed. In that
+case, add the database credentials to the **resource/db section of your ./config/shop.php**
+file too!
+
+If you don't have at least MySQL 5.7.8 or MariaDB 10.2.2 installed, you will probably get an error like
+
+```Specified key was too long; max key length is 767 bytes```
+
+To circumvent this problem, drop the new tables if there have been any created and
+change the charset/collation setting in `./config/database.php` to these values before
+installing Aimeos again:
+
+```php
+'connections' => [
+    'mysql' => [
+        // ...
+        'charset' => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        // ...
+    ]
+]
+```
+
+If you want to use a database server other than MySQL, please have a look into the article about
+[supported database servers](https://aimeos.org/docs/latest/infrastructure/databases/)
+and their specific configuration. Supported are:
+
+* MySQL, MariaDB (fully)
+* PostgreSQL (fully)
+* SQL Server (fully)
+
+## Installation
+
+Then, add these lines to the composer.json of the **Laravel skeleton application**:
+
+```
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "aimeos/aimeos-laravel": "~2021.07",
+        ...
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan migrate",
+            "@php artisan vendor:publish --tag=public --force",
+            "\\Aimeos\\Shop\\Composer::join"
+        ],
+        ...
+    }
+```
+
+Afterwards, install the Aimeos shop package using
+
+`composer update`
+
+In the last step you must now execute these artisan commands to get a working
+or updated Aimeos installation:
+
+```
+php artisan vendor:publish --all
+php artisan migrate
+php artisan aimeos:setup --option=setup/default/demo:1
+```
+
+In a production environment or if you don't want that the demo data gets
+installed, leave out the `--option=setup/default/demo:1` option.
+
+## Setup
+
+To see all components and get everything working, you also need to create your
+main Blade template in `resources/views/app.blade.php` (before 2021.07 only).
+This is a working example using the [Twitter bootstrap CSS framework](http://getbootstrap.com/):
+
+```html
+<!DOCTYPE html>
+<html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ in_array(app()->getLocale(), ['ar', 'az', 'dv', 'fa', 'he', 'ku', 'ur']) ? 'rtl' : 'ltr' }}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	@yield('aimeos_header')
+	<title>Aimeos on Laravel</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+	<style>
+		/* Theme: Black&White */
+		/* body {
+			--ai-primary: #000; --ai-primary-light: #000; --ai-primary-alt: #fff;
+			--ai-bg: #fff; --ai-bg-light: #fff; --ai-bg-alt: #000;
+			--ai-secondary: #555; --ai-light: #D0D0D0;
+		} */
+		body { color: #000; color: var(--ai-primary, #000); background-color: #fff; background-color: var(--ai-bg, #fff); }
+		.navbar, footer { color: #555; color: var(--ai-primary-alt, #555); background-color: #f8f8f8; background-color: var(--ai-bg-alt, #f8f8f8); }
+		.navbar a:not(.btn), .navbar a:before, .navbar span, footer a:not(.btn) { color: #555 !important; color: var(--ai-primary-alt, #555) !important; }
+		.content { margin: 0 5% } .catalog-stage-image { margin: 0 -5.55% }
+		.sm { display: block } .sm:before { font: normal normal normal 14px/1 FontAwesome; padding: 0 0.2em; font-size: 225% }
+		.facebook:before { content: "\f082" } .twitter:before { content: "\f081" } .instagram:before { content: "\f16d" } .youtube:before { content: "\f167" }
+	</style>
+	@yield('aimeos_styles')
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light">
+		<a class="navbar-brand" href="/">
+			<img src="http://aimeos.org/fileadmin/template/icons/logo.png" height="30" title="Aimeos Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				@if (Auth::guest())
+					<li class="nav-item login"><a class="nav-link" href="/login">Login</a></li>
+				@else
+					<li class="nav-item profile dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="nav-link" href="{{ route('aimeos_shop_account',['site'=>Route::current()->parameter('site','default'),'locale'=>Route::current()->parameter('locale','en'),'currency'=>Route::current()->parameter('currency','EUR')]) }}" title="Profile">Profile</a></li>
+							<li><form id="logout" action="/logout" method="POST">{{csrf_field()}}</form><a class="nav-link" href="javascript: document.getElementById('logout').submit();">Logout</a></li>
+						</ul>
+					</li>
+				@endif
+			</ul>
+			@yield('aimeos_head')
+		</div>
+	</nav>
+	<div class="content">
+		@yield('aimeos_stage')
+		@yield('aimeos_nav')
+		@yield('aimeos_body')
+		@yield('aimeos_aside')
+		@yield('content')
+	</div>
+	<footer class="mt-5 p-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-sm-6 my-4"><h2 class="pb-3">LEGAL</h2><p><a href="#">Terms & Conditions</a></p><p><a href="#">Privacy Notice</a></p><p><a href="#">Imprint</a></p></div>
+					<div class="col-sm-6 my-4"><h2 class="pb-3">ABOUT US</h2><p><a href="#">Contact us</a></p><p><a href="#">Company</a></p></div>
+				</div>
+			</div>
+			<div class="col-md-4 my-4">
+				<a class="px-2 py-4 d-inline-block" href="/"><img src="http://aimeos.org/fileadmin/template/icons/logo.png" style="width: 160px" title="Aimeos Logo"></a>
+				<div class="social"><a href="#" class="sm facebook" title="Facebook" rel="noopener">Facebook</a><a href="#" class="sm twitter" title="Twitter" rel="noopener">Twitter</a><a href="#" class="sm instagram" title="Instagram" rel="noopener">Instagram</a><a href="#" class="sm youtube" title="Youtube" rel="noopener">Youtube</a></div>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/combine/npm/jquery@3,npm/bootstrap@4"></script>
+	@yield('aimeos_scripts')
+	</body>
+</html>
+```
+
+Afterwards, you should clear the Laravel cache files. Otherwise, you might get
+an exception due to old cached data.
+
+```php artisan cache:clear```
+
+To reference images correctly, you have to adapt your `.env` file and set the `APP_URL`
+to your real URL, e.g.
+
+```APP_URL=http://127.0.0.1:8000```
+
+**Caution:** Make sure, Laravel uses the `file` session driver in your `.env` file!
+Otherwise, the shopping basket content won't get stored correctly!
+
+```SESSION_DRIVER=file```
+
+Then, you should be able to call the catalog list page in your browser. For a
+quick start, you can use the integrated web server that is available since PHP 5.4.
+Simply execute this command in the base directory of your application:
+
+```php artisan serve```
+
+Point your browser to the list page of the shop using:
+
+http://127.0.0.1:8000/index.php/shop
+
+**Note:** Integrating the Aimeos package adds some routes like `/shop` or `/admin` to your
+Laravel installation but the **home page stays untouched!** If you want to add Aimeos to
+the home page as well, replace the route for "/" in `./routes/web.php` by this line:
+
+```php
+Route::group(['middleware' => ['web']], function () {
+	Route::get('/', '\Aimeos\Shop\Controller\CatalogController@homeAction')->name('aimeos_home');
+});
+```
+
+For multi-vendor setups, read the article about [multiple shops](https://aimeos.org/docs/latest/laravel/customize/#multiple-shops).
+
+This will display the Aimeos catalog home component on the home page you you get a
+nice looking shop home page. The `/shop` page will look like:
+
+[![Aimeos frontend](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-frontend.jpg?2021.07)](http://127.0.0.1:8000/index.php/shop)
+
+## Admin
+
+To use the admin interface, you have to set up Laravel authentication first:
+
+### Laravel 8
+
+```
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+npm install && npm run dev
+```
+
+For more information, please follow the Laravel documentation:
+* [Laravel 8.x](https://laravel.com/docs/8.x/authentication)
+
+### Laravel 7
+
+```
+composer require laravel/ui:^2.0
+php artisan ui vue --auth
+npm install && npm run dev
+```
+
+For more information, please follow the Laravel documentation:
+* [Laravel 7.x](https://laravel.com/docs/7.x/authentication)
+
+### Laravel 6
+
+```
+composer require laravel/ui:^1.0
+php artisan ui vue --auth
+npm install && npm run dev
+```
+
+For more information, please follow the Laravel documentation:
+* [Laravel 6.x](https://laravel.com/docs/6.x/authentication)
+
+### Create account
+
+Test if your authentication setup works before you continue. Create an admin account
+for your Laravel application so you will be able to log into the Aimeos admin interface:
+
+```php artisan aimeos:account --super <email>```
+
+The e-mail address is the user name for login and the account will work for the
+frontend too. To protect the new account, the command will ask you for a password.
+The same command can create limited accounts by using "--admin", "--editor" or "--api"
+instead of "--super" (access to everything).
+
+### Configure authentication
+
+As a last step, you need to extend the `boot()` method of your
+`App\Providers\AuthServiceProvider` class and add the lines to define how
+authorization for "admin" is checked in `app/Providers/AuthServiceProvider.php`:
+
+```php
+    public function boot()
+    {
+        // Keep the lines before
+
+        Gate::define('admin', function($user, $class, $roles) {
+            if( isset( $user->superuser ) && $user->superuser ) {
+                return true;
+            }
+            return app( '\Aimeos\Shop\Base\Support' )->checkUserGroup( $user, $roles );
+        });
+    }
+```
+
+### Test
+
+If your `./public` directory isn't writable by your web server, you have to create these
+directories:
+
+2021.07 and later:
+```
+mkdir public/aimeos public/vendor
+chmod 777 public/aimeos public/vendor
+```
+
+2021.04 and before:
+```
+mkdir public/files public/preview public/uploads
+chmod 777 public/files public/preview public/uploads
+```
+
+In a production environment, you should be more specific about the granted permissions!
+If you've still started the internal PHP web server (`php artisan serve`)
+you should now open this URL in your browser:
+
+http://127.0.0.1:8000/index.php/admin
+
+Enter the e-mail address and the password of the newly created user and press "Login".
+If you don't get redirected to the admin interface (that depends on the authentication
+code you've created according to the Laravel documentation), point your browser to the
+`/admin` URL again.
+
+**Caution:** Make sure that you aren't already logged in as a non-admin user! In this
+case, login won't work because Laravel requires to log out first.
+
+[![Aimeos backend](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-backend.png)](http://127.0.0.1:8000/index.php/admin)
+
+## Hints
+
+To simplify development, you should configure to use no content cache. You can
+do this in the `config/shop.php` file of your Laravel application by adding
+these lines at the bottom:
+
+```php
+    'madmin' => array(
+        'cache' => array(
+            'manager' => array(
+                'name' => 'None',
+            ),
+        ),
+    ),
+```
+
+## License
+
+The Aimeos Laravel package is licensed under the terms of the MIT license and
+is available for free.
+
+## Links
+
+* [Web site](https://aimeos.org/Laravel)
+* [Documentation](https://aimeos.org/docs/Laravel)
+* [Forum](https://aimeos.org/help/laravel-package-f18/)
+* [Issue tracker](https://github.com/aimeos/aimeos-laravel/issues)
+* [Composer packages](https://packagist.org/packages/aimeos/aimeos-laravel)
+* [Source code](https://github.com/aimeos/aimeos-laravel)

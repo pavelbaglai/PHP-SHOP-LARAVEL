@@ -1,20 +1,28 @@
 ---
 name: Bug report
-about: Tell us about a bug you may have identified in Bootstrap.
-title: ''
-labels: ''
-assignees: ''
+about: Create a report to help us improve
 
 ---
 
-Before opening:
+**Environment**
+1. Version (e.g. 2020.10)
+2. Operating system (Linux, Mac, Windows)
 
-- [Search for duplicate or closed issues](https://github.com/twbs/bootstrap/issues?utf8=%E2%9C%93&q=is%3Aissue)
-- [Validate](https://html5.validator.nu/) any HTML to avoid common problems
-- Read the [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md)
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-Bug reports must include:
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-- Operating system and version (Windows, macOS, Android, iOS)
-- Browser and version (Chrome, Firefox, Safari, Microsoft Edge, Opera, Android Browser)
-- A [reduced test case](https://css-tricks.com/reduced-test-cases/) or suggested fix using [CodePen](https://codepen.io/) or [JS Bin](https://jsbin.com/)
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+
+**Additional context**
+Add any other context about the problem here.
