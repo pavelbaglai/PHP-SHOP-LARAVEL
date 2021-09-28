@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -10,13 +10,7 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.webpackConfig({
-    resolve: {
-        alias: {
-            'bootstrap-confirmation': 'bootstrap-confirmation2/bootstrap-confirmation.js'  // relative to node_modules
-        },
-        //extensions: [ '.tsx', '.ts', '.js', '.vue' ],
-    }
-});
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    .sourceMaps();
